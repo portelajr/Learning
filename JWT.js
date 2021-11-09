@@ -39,4 +39,4 @@ module.exports = async (req, res) => {
 
 
 //SITE: jwt.io consegue mostrar header e payload (descriptografia)
-// token: só expira com a data ou redefinição de secrete (LOGOUT NAO MUDA, por exemplo)
+// token: só expira com a data ou redefinição de secret (LOGOUT NAO MUDA o TOKLEN, por exemplo)
