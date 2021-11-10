@@ -10,6 +10,17 @@ const validateJWT = async (req, res, next) => {
   if (!token)
     return res.status(401).json({ message: "Token não informado" });
   
+  // const payload = jwt.verify(token, secret)
+  //função verify verificada em um bloco try catch
+
+  try {
+    const payload = jwt.verify(token, secret)
+    req.user = payload.data.userName;
+    next();
+  } catch (error) {
+    return res.status(401).json({ message: 'Erro: token inválido'})
+  }
+  
   next();
 };
 
