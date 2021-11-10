@@ -3,4 +3,5 @@
 
 - upload de arquivos pesados não sao armazenados em banco
 - salva em banco a url do armazenamento de servidor especifico
-- 
+- tipo de comunicação http form-data (não mais json)
+
