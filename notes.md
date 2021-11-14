@@ -3,5 +3,7 @@
 
 - upload de arquivos pesados não sao armazenados em banco
 - salva em banco a url do armazenamento de servidor especifico
-- tipo de comunicação http form-data (não mais json)
+- tipo de comunicação http form-data (não mais usando json)
 
+## Comunicação entre aplicações (arquivos)
+- dependências: axios form-data
